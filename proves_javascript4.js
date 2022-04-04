@@ -196,41 +196,40 @@ function timerOn(time) {
   let timer2 = document.getElementById("timer2");
   let timer3 = document.getElementById("timer3");
   let timer4 = document.getElementById("timer4");
-  let timerCounter = 1;
+  let timerCounter = 0;
 
-  setinterval(quarter(), (time/4));
+  let timerId = setTimeout(function timerout() {
+    if (timerCounter <4){
+    timerCounter ++;
+    quarter(timerCounter);
+    timerId = setTimeout(timerout, 2000, timerCounter);
+    }
+  }, 2000, timerCounter);
+  
+  // let timerInterval = setInterval(quarter, 2000);
 
-  function quarter(){
+  function quarter(timerCounter){
     
     if (timerCounter == 1){
-    timer1.style.color = "rgba(43, 226, 52, 0.2)"
+    timer1.classList.add = "red";
+    console.log(timer1);
+ 
+
     } else if (timerCounter == 2){
       timer3.style.color = "rgba(255, 99, 9, .4)"
       timer2.style.color = "rgba(255, 99, 9, .4)"
-      timer1.style.color = "rgba(255, 99, 9, 1)"
       timer4.style.color = "rgba(255, 99, 9, 1)"
+
       } else if (timerCounter == 3){
       timer3.style.color = "rgba((226, 64, 43, .4)"
       timer2.style.color = "rgba(226, 64, 43, .4)"
-      timer1.style.color = "rgba(226, 64, 43, .4)"
       timer4.style.color = "rgba(226, 64, 43, 1)"
+
       } else {   
   bouncing();
   }
-  // function secondQuarter(){
-  //   let timer2 = document.getElementById("timer2");
-  //   timer2.style.color = "rgba(43, 226, 52, 0.2)"
-  // setTimeout(thirdQuarter(), (time/4));
-  // }
-  // function thirdQuarter(){
 
-  //   timer3.style.color = "rgba(255, 99, 9, .4)"
-  //   timer2.style.color = "rgba(255, 99, 9, .4)"
-  //   timer1.style.color = "rgba(255, 99, 9, .4)"
-  //   timer4.style.color = "rgba(255, 99, 9, 1)"
-  
   }
-  timerCounter ++;
 }
 // set whose torn it is.
 function setTorn(torn) {
