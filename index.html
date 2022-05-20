@@ -1,180 +1,177 @@
 <!DOCTYPE html>
-</body>
-</html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="estils_proves.css">
-	<title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarraco Veterinària</title>
+    <meta name="description" content="Tarraco Veterinària, clínica veterinària de gossos i gats. Medicina general, especialitats">
+    <meta name="keywords" content="Veterinari Tarragona clínica veterinària gos gat">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div id="settings">
-		<div class="setbox">
-			<form class = "form" action="">
-				<div class="set-header">
-					<p class="welcome">Welcome!This is a quiz game for 1 or 2 players.</p>
-					<h2 class="setTitle">Set your game and we are ready to go!</h2>
-				</div>
-					<div class="column number">
-						<h3>Number of players</h3>
-						<div class="players-number">
-							<div class="one-player">
-								<input type="radio" id="1player" name="playersNum" value=1>
-								<label for="1player">1 player</label>
-							</div>
-							<div class="two-players">
-								<input type="radio" id="2players" name="playersNum" value=2 checked>
-								<label for="2players">2 players</label>
-							</div>
-						</div>
-					</div>
-					<div class="column textcol">
-						<h3>Player 1 name</h3>
-						<input class="text-input" type="text" id="player1" placeholder="Player1" value="Player1" spellcheck="false">
-					</div>					
-					<div class="column textcol">
-						<h3>Player 2 name</h3>
-						<input class="text-input" type="text" placeholder="Player2" id="player2" value="Player2" spellcheck="false">
-					</div>
-					<div class="column">
-						<h3>Number of questions</h3>
-						<input type="radio" id="tenQuestions" name="questionsNum" value=10>
-						<label for="tenQuestions">10 questions</label>
-						<input type="radio" id="thirtyQuestions" name="questionsNum" value=30 checked>
-						<label for="thirtyQuestions">30 questions</label>		
-						<input type="radio" id="fiftyQuestions" name="questionsNum" value=50>
-						<label for="fiftyQuestions">50 questions</label>	
-					</div>
-					<div class="column">
-						<h3>Time for question</h3>
-						<input type="radio" id="twelveSecs" name="time" value=1>
-						<label for="twelveSecs">12 seconds</label>
-						<input type="radio" id="fifteenveSecs" name="time" value=2 checked>
-						<label for="fifteenSecs">15 seconds</label>		
-						<input type="radio" id="twenySecs" name="time" value=2>
-						<label for="twentySecs">20 seconds</label>		
-					</div>		
-					<div class="column subject">	
-						<h3>Subject</h3>
-						<input type="radio" name="subjects" id="animals">
-						<label for="animals">Animals</label>
-						<input type="radio" name="subjects" id="science">
-						<label for="science">Science and Nature</label>
-						<input type="radio" name="subjects" id="maths">
-						<label for="maths">Maths</label>
-						<input type="radio" name="subjects" id="computer">
-						<label for="computer">Computer science</label>
-						<input type="radio" name="subjects" id="history">
-						<label for="history">History</label>
-						<input type="radio" name="subjects" id="mithology">
-						<label for="mithology">Mithology</label>
-						<input type="radio" name="subjects" id="Geography">
-						<label for="Geography">Geography</label>
-						<br>
-						<input type="radio" name="subjects" id="all" checked>
-						<label for="all">Miscellanea (all subjects above plus many more!)</label>
-					</div>
-					<div class="column">
-						<h3>Difficulty of the questions</h3>
-						<input type="radio" id="easy" name="difficulty" value='easy' checked>
-						<label for="easy">Easy</label>
-						<input type="radio" id="medium" name="difficulty" value=2>
-						<label for="medium">Medium</label>		
-						<input type="radio" id="difficult" name="difficulty" value=2>
-						<label for="difficult">Difficult</label>
-						<input type="radio" id="any" name="difficulty" value=2>
-						<label for="any">Any</label>
-					</div>
-					<div class="column">
-						<h3>Bounce (ask the other player missed questions)</h3>
-						<input type="radio" id="bounceYes" name="bounce" value=2 checked>
-						<label for="bounceYes">ON</label>		
-						<input type="radio" id="bounceNo" name="bounce" value=2>
-						<label for="bounceNo">OFF</label>
-			</div>
+<header>
+    <a class="logodiv" href="index.html">
+        <div ></div>
+    </a>
+    <nav>
+        <div class="menu">
+            <a href="index.html">
+                <div class="menuli menuli--active"  title="Pàgina d'inici">Inici</div>
+            </a>
+            <a href="cat/services.html">
+                <div class="menuli" title="Els nostres serveis">Serveis</div>
+            </a>
+            <a href="cat/healthtips.html">
+                <div class="menuli" title="Salut per al teu animal de companyia">Consells de salut</div>
+            </a>
+            <a href="cat/experiences.html">
+                <div class="menuli" title="Experiències 'animals'">Experiències</div>
+            </a>
+            <a href="cat/contact.html">
+                <div class="menuli" title="Contacta amb nosaltres">Contacte</div>
+            </a>
+        </div>
+    </nav>
+    <div class="navside">
+        <div class="languages">
+            <a  href="index.html" class="activelang"  title="Català">Cat</a>
+            <a href="es/index-es.html" title="Español">Es</a>
+            <a href="en/index-en.html" title="English">En</a>
+        </div>
+        <div class="tel"  title="logo petjada">
+        </div>
+        <div class="open">
+        </div>
+    </div>
+    <div class="burguer">
+        <div class="burg"></div>
+        <div class="burg"></div>
+        <div class="burg"></div>
+    </div>
+</header>
+<div id="menuover">
+    <a href="index.html">
+        <div class="menuli-over menuli--active"  title="Pàgina d'inici">Inici</div>
+    </a>
+    <a href="cat/services.html">
+        <div class="menuli-over" title="Els nostres serveis">Serveis</div>
+    </a>
+    <a href="cat/healthtips.html">
+        <div class="menuli-over" title="Salut per al teu animal de companyia">Consells de salut</div>
+    </a>
+    <a href="cat/experiences.html">
+        <div class="menuli-over" title="Experiències 'animals'">Experiències</div>
+    </a>
+    <a href="cat/contact.html">
+        <div class="menuli-over" title="Contacta amb nosaltres">Contacte</div>
+    </a>        
+</div>
+<div class="over" id="over">
+    <div class="overmap">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="662" height="321" id="gmap_canvas" src="https://maps.google.com/maps?q=tarragona%20c.torres%20jordi,%2020&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
+    </div>
+</div>
+<div class="main">
+    <div class="carrousel">
+        <div class="big">
 
-				<a href="#">
-					<div class="button">
-						PLAY!
-					</div>
-				</a>
-			</form>
-		</div>
-	</div>
-		<div class="container">
-			<div id="titles">
-				<h1 id="titleplayer">Player #1, Player1</h1>
-				<h2 id="titlebounce">Rebounce!</h2>
-			</div>
-			<div class="card">
-				<div class="card-top">
-					<h2 id="questiontitle">Question #15 of 20, COMPUTER SCIENCE</h2>
-				</div>
-				<div class="question-container">
-					<div class="question-form">
-						<h3>Wich is the tallest animal?</h3>
-						<div class="resposta">
-							<input type="radio" id="giraffe" name="answer" value="giraffe">
-							<label for="giraffe">The giraffe</label>
-						</div>
-						<div class="resposta">
-							<input type="radio" id="elephant" name="answer" value="elephant">
-							<label for="elephant">The elephant</label>
-						</div>
-						<div class="resposta">
-							<input type="radio" id="kangaroo" name="answer" value="kangaroo">
-							<label for="kangaroo">The kangaroo</label>
-						</div>
-						<div class="resposta">
-							<input type="radio" id="whale" name="answer" value="whale">
-							<label for="whale">The white whale</label>
-						</div>
-						<div>
-							<div class="submit" onclick="next(false)">
-								<p class="submit-tag">Submit</p>
-							</div>
-						</div>
-					</div>
-					<div class="time-container">
-						<div class="timer red" id="timer4"></div>
-						<div class="timer" id="timer1"></div>
-						<div class="timer" id="timer3"></div>
-						<div class="timer" id="timer2"></div>
-					</div>
-				</div>
-				<div class="bottom">
-					<div class="bottom1">
-						<div class="player-rate player1-rate">
-							<h3 class="player-name" id="player1name">Player 1, Pepito</h3>
-							<div class="player-container">
-								<label for="player1-rate-progress">10/10</label>
-								<progress id="player1-rate-progress" value="100" max="100">100 %</progress>
-							</div>
-						</div>
-						<div class="player-score player1-score">
-							<p class="player-score-number player1-score-number">0</p>
-							<p class="player-score-units player1-score-units">points</p>
-						</div>
-					</div>
-					<div class="bottom2">
-						<div class="player-score player2-score">
-							<p class="player-score-number player2-score-number">0</p>
-							<p class="player-score-units player2-score-units">points</p>
-						</div>
-						<div class="player-rate player2-rate">
-							<h3 class="player-name" id="player2name">Player 2, Juanito</h3>
-							<div class="player-container">
-							<progress id="player2-rate-progress" value="100" max="100">100 %</progress>
-							<label for="player2-rate-progress">10/10</label>
-						</div>
-						</div>
-					</div>
-				</div>
+            <div class="small" id="car1">
+                <div class="square" id="sq1">
+                    <p class="p1">Més de 20 anys acompanyant-vos</p>
+                    <a class="carroussel-button" href="cat/services.html">
+                        <div class="button">
+                            <p>Els nostres serveis</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="small" id="car2">
+                <div class="square square2"  id="sq2">
+                    <p>T'ajudem a tenir cura del teu animal de companyia</p>
+                    <a class="carroussel-button" href="cat/healthtips.html">
+                        <div class="button">
+                            <p>Consells de salut</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="small" id="car3">
+                <div class="square" id="sq3">
+                <p>Ja són molts clients satisfets</p>
+                <a class="carroussel-button" href="cat/experiences.html">
+                    <div class="button">
+                        <p>Experiències animals</p>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+        <ul class="dotslist">
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+        </ul>
+    </div>
+    <article class="article">
+        <h1>Benvinguts a Tarraco Veterinària</h1>
+        <div class="content">
+            <p class = "article-column">
+                Des del 2000 a Tarraco Veterinària atenem a gossos i gats amb l'objectiu de millorar la seva salut i benestar.
+                Som un equip de dos veterinaris i una auxiliar que treballem amb professionalitat i passió per oferir benestar i salut als animals de companyia dels nostres clients.
+            </p>
+            <p class = "article-column">
+                Disposem d'unes instal·lacions dotades amb un quiròfan, zona d'hospitalització, tres consultes, un laboratori i equipament de tecnologia avançada pel diagnòstic per la imatge. A més, comptem amb una zona de botiga on podràs trobar la millor alimentació per la teva mascota.
+            </p>
+        </div>
+    </article>
+    <div class="cta">
+        <a class="tagcta" id="tag1" href="cat/services.html">
+            <h2>Coneix els nostres serveis</h2>
+        </a>
+        <a class="tagcta" href="cat/healthtips.html">
+            <h2>Consells de salut per a gossos i gats</h2>
+        </a>
 
-			</div>
-		</div>
-	
-<script src="proves_javascript4.js"></script>
+    </div>
+    <a class="sidetab message"><span class="material-icons">place</span>On som</a>
+    <div class="sidetab loc" ><span class="material-icons">call</span>Truca ara,<br> està obert<br>977.214.774</div>
+</div>
+<div class="trust">
+    <img class="sponsor" src="img/royal.png" alt="Royal Canin">
+    <img class="sponsor" src="img/scalibor.png" alt="Scalibor">
+
+</div>
+<footer>
+    <div class="logofooter">
+    </div>    
+    <div class="footer1">
+        <div class="webmap">
+            <h4 class="map-title">Web map</h4>
+            <ul class="weblist">
+                <li class="webelement"><a href="index.html">Inici</a></li>
+                <li class="webelement"><a href="cat/services.html">Serveis</a></li>
+                <li class="webelement"><a href="cat/healthtips.html">Consells de salut</a></li>
+                <li class="webelement"><a href="cat/experiences.html">Experiències</a></li>
+                <li class="webelement"><a href="cat/contact.html">Contacte</a></li>
+            </ul>
+        </div>
+        <div class="xarxes">
+            <h3 class="titolxarxes">Segueix-nos a</h3>
+            <p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </p>
+        </div>
+        <div class="webdev">
+            <p class = "about"><a href = url(http://augustolle.com)>Web development: August Ollé, 2022</a></p>
+            <p>®Tarraco Veterinària S.L.<br>C.Torres Jordi, 20 baixos<br>43005 Tarragona<br>Spain</p>
+        </div>
+    </div>
+</footer>
+<script src="script/script.js"></script>
 </body>
 </html>

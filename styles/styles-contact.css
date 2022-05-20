@@ -1,0 +1,49 @@
+.form {
+    font-size: 1.2rem;
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: minmax(500px, 100%);
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.form__input {
+    padding: 30px 15px 15px 15px;
+    background-color: rgba(100, 100, 100,0.3);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1 solid black;
+    margin-bottom: 60px;
+}
+.form__title {
+    text-align: center;
+    margin: 0 auto 40px auto;
+}
+.form__label {
+    padding-left: 15px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    width: 400px;
+}
+.form__submit {
+    padding: 10px;
+    height: 50px;
+    background-color: #2a4f70;
+    color: #9bd1e5;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+#missatge {
+    height: 100px;
+}
+.mapouter {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}

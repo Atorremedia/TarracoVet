@@ -1,0 +1,104 @@
+
+.container-grid {
+  margin-left: 10vw;
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr;
+}
+.animaltabs-container {
+  width: 80%;
+  border: 1px solid black;
+  padding: 5px;
+  margin: auto;
+}
+.animal-selector {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    margin: 20px auto 20px 0;
+}
+.animal-selector label {
+    margin: 5px;
+}
+.animal-tabs {
+  margin: 5px;
+  padding: 5px;
+}
+.dog {
+  display: flex;
+  flex-direction: column;
+  margin: 18px 3px;
+  border: 1px solid black;
+}
+.cat {
+  display: flex;
+  flex-direction: column;
+  margin: 18px 3px;
+  border: 1px solid black;
+}
+.titlecat, .titledog {
+  display: none;
+}
+.post {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.post-header {
+    background-color: #443742;
+    color: #9bd1e5;
+    padding-left: 10px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-image {
+    width: 30%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.post-text {
+    padding: 15px;
+}
+.tip-image1 {
+    background-image: url(../img/vaccine.jpg);
+}
+.tip-image2 {
+    background-image: url(../img/puppy.jpg);
+}
+.tip-image3 {
+    background-image: url(../img/cat-puppy.jpg);
+}
+.tip-image4 {
+    background-image: url(../img/flea.jpg);
+}
+.tip-image5 {
+    background-image: url(../img/nutcracker.jpg);
+}
+.tip-image6 {
+    background-image: url(../img/feeding.jpg);
+
+}
+.tip-image7 {
+    background-image: url(../img/cat-feeding.jpg);
+
+}
+
+@media (max-width: 400px){
+  .navside {
+    display: none;
+  }
+  .logodiv {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 1000px){
+
+}
+@media (min-width: 1000px){
+
+}
